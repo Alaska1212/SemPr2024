@@ -12,11 +12,11 @@ class GameBoard:
 
         # Завантаження зображень
         self.images = [
-                          ImageTk.PhotoImage(Image.open(img).resize((100, 100)))
-                          for img in [f'./images/Коти{i + 1}.jpg' for i in range(7)]
+                          ImageTk.PhotoImage(Image.open(img).resize((200, 200)))
+                          for img in [f'./images/енот{i + 1}.jpg' for i in range(7)]
                       ][: (rows * cols) // 2]
         hidden_image = ImageTk.PhotoImage(
-            Image.open('./images/hidden.jpg').resize((100, 100))
+            Image.open('./images/back.jpg').resize((200, 200))
         )
 
         # Дублювання зображень та їх випадкове розташування
